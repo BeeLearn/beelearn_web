@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components {
+    .text-highlight {
+        @apply bg-gradient-to-r from-purple-700 to-blue-700 bg-clip-text text-transparent animate-pulse;
+    }
+
+    .btn-primary {
+        @apply bg-violet-800 px-4 py-2.5 text-white font-medium rounded-md transition-all duration-150  hover:ring-4 hover:ring-offset-1 hover:ring-violet-500;
+    }
+}
