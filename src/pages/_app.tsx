@@ -12,7 +12,7 @@ export default function App({ Component, pageProps }: AppProps) {
             <Head>
                 <title></title>
             </Head>
-            <div className={defaultFont.className.concat(" text-[14.5px] bg-red-100")}>
+            <div className={defaultFont.className.concat(" text-[14.5px]")}>
                 <Component {...pageProps} />
             </div>
         </>

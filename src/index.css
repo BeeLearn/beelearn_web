@@ -5,10 +5,52 @@
 
 @layer components {
     .text-highlight {
-        @apply bg-gradient-to-r from-purple-700 to-blue-700 bg-clip-text text-transparent animate-pulse;
+        @apply bg-gradient-to-r from-violet-700 to-blue-700 bg-clip-text text-transparent animate-pulse;
     }
 
     .btn-primary {
-        @apply bg-violet-800 px-4 py-2.5 text-white font-medium rounded-md transition-all duration-150  hover:ring-4 hover:ring-offset-1 hover:ring-violet-500;
+        @apply bg-violet-800 px-4 py-2.5 text-white font-medium rounded-md transition-all duration-150 hover:ring-4 hover:ring-offset-1 hover:ring-violet-500;
     }
+
+    .text-md {
+        @apply text-[16px];
+    }
+}
+
+:root {
+    --primary: theme("colors.violet.500");
+    --tertiary: theme("colors.white");
+    --secondary: theme("colors.violet.500");
+    --shadow: theme("colors.violet.950");
+}
+
+.text-primary {
+    color: var(--primary);
+}
+
+.bg-primary {
+    background: var(--primary);
+}
+
+.bg-secondary {
+    background: var(--secondary);
+}
+
+.text-secondary {
+    color: var(--secondary);
+}
+
+.bg-tertiary {
+    background: var(--tertiary);
+}
+
+.text-tertiary {
+    color: var(--tertiary);
+}
+
+.border-shadow {
+    border-color: var(--shadow);
+}
+header {
+    transition: all 0.5;
 }
