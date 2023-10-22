@@ -5,7 +5,7 @@ import { Disclosure, Transition } from "@headlessui/react";
 import { BsArrowRight, BsChevronDown, BsChevronUp, BsBellFill } from "react-icons/bs";
 
 import { join, listenForScrollAndTriggerCallback } from "@/scripts";
-import { icCodeBox, icMenuCheck, icThreeStars, ilGroupUsers, ilJob, ilZoomSkate } from "@/assets";
+import { icCodeBox, icMenuCheck, icThreeStars, ilGroupUsers, ilJob, ilZoomSkate, homeScreen } from "@/assets";
 
 function SectionIntroduction({ className }: React.HTMLAttributes<HTMLDivElement>) {
     return (
@@ -22,7 +22,10 @@ function SectionIntroduction({ className }: React.HTMLAttributes<HTMLDivElement>
                         className="w-6 h-6 object-cover" />
                 </button>
             </div>
-            <div className="w-full h-56 bg-red-500" />
+            <Image
+                src={homeScreen}
+                alt="BeeLearn Home Screen"
+                className="w-80 object-cover" />
         </section>
     );
 }
@@ -53,17 +56,19 @@ function SectionFeature({ className }: React.HTMLAttributes<HTMLDivElement>) {
                         className="w-6 h-6 object-cover" />
                 </button>
             </div>
-            <div className="h-56 bg-red">
-                <Image 
-                    src={ilJob}
-                    alt="Customer Service mx-auto" />
-            </div>
             <button className="btn-primary flex items-center md:hidden">
                 <p className="flex-1">Start Learning</p>
                 <BsArrowRight
                     alt="icon"
                     className="w-6 h-6 object-cover" />
             </button>
+            <div className="h-56 bg-red">
+                <Image
+                    src={ilJob}
+                    alt="Customer Service"
+                    className="mx-auto" />
+            </div>
+
         </div>
     );
 }
@@ -172,12 +177,12 @@ const BannerQuiz = React.forwardRef<HTMLDivElement>(function BannerQuiz(props, r
 function SectionFaq({ className }: React.HTMLAttributes<HTMLDivElement>) {
     const faqs = [
         {
-            title: "What exactly is Log2Base2?",
-            description: "Log2Base2 is a visual learning platform to learn programming, data structures & algorithm and prepare for the coding interview. Log2Base2 is globally trusted learning platform with 600K+ learners across 70+ countries.",
+            title: "What exactly is BeeLearn?",
+            description: "BeeLearn is a visual learning platform to learn programming, data structures & algorithm and prepare for the coding interview. BeeLearn is globally trusted learning platform with 600K+ learners across 70+ countries.",
         },
         {
             title: "Do you provide a free trial?",
-            description: "Yes, Log2Base2 offers a 3-day free trial, which includes access to two free courses and 50+ trail videos on all the courses. You can check out our plans.",
+            description: "Yes, BeeLearn offers a 3-day free trial, which includes access to two free courses and 50+ trail videos on all the courses. You can check out our plans.",
         },
         {
             title: "Is there an option to purchase individual courses and packages?",
@@ -197,11 +202,15 @@ function SectionFaq({ className }: React.HTMLAttributes<HTMLDivElement>) {
 
                 {
                     faqs.map((faq, index) => (
-                        <Disclosure key={index}>
+                        <Disclosure 
+                            key={index}
+                            data-headlessui-state="open">
                             {
                                 ({ open }) => (
                                     <>
-                                        <Disclosure.Button className="flex items-center space-x-2 bg-slate-200 px-4 py-3 text-stone-700 rounded-lg">
+                                        <Disclosure.Button 
+                                            className="flex items-center space-x-2 bg-slate-200 px-4 py-3 text-stone-700 rounded-lg"
+                                            data-headlessui-state="open">
                                             <p className="flex-1 text-md truncate">{faq.title}</p>
                                             {open ? <BsChevronUp /> : <BsChevronDown />}
 
@@ -215,7 +224,9 @@ function SectionFaq({ className }: React.HTMLAttributes<HTMLDivElement>) {
                                             leaveFrom="transform scale-100 opacity-100"
                                             leaveTo="transform scale-95 opacity-0"
                                         >
-                                            <Disclosure.Panel className="flex flex-col space-y-4 bg-violet-700 px-8 py-4 text-white rounded-xl">
+                                            <Disclosure.Panel 
+                                                className="flex flex-col space-y-4 bg-violet-700 px-8 py-4 text-white rounded-xl"
+                                                data-headlessui-state="open">
                                                 <h3 className="text-lg font-medium">{faq.title}</h3>
                                                 <p className="text-violet-100">{faq.description}</p>
                                             </Disclosure.Panel>
@@ -268,7 +279,7 @@ function SectionSubscription({ className }: React.HTMLAttributes<HTMLDivElement>
                     </div>
                 </div>
             </div>
-            <div className="flex flex-col space-y-4 md:flex-row md:space-x-4 md:items-center bg-blue-100 p-6 rounded-xl">
+            <div className="flex flex-col space-y-4 md:flex-row md:space-x-4 md:items-center bg-purple-100 p-6 rounded-xl">
                 <div className="md:flex-1 text-md">
                     Enjoy unlimited access for 7 days. Love it and keep investing in yourself for only $7.49 a month, or simply cancel before October 17 and you won’t ever be charged.
                 </div>
