@@ -13,8 +13,8 @@ function SectionIntroduction({ className }: React.HTMLAttributes<HTMLDivElement>
             className={join("flex flex-col space-y-4 md:flex-row md:space-x-4 md:space-y-0 place-content-center place-items-center md:place-items-start", className)}>
             <div className="flex flex-col items-center md:items-start space-y-4">
                 <button className="bg-purple-200 px-2 py-1 text-purple-700 rounded">Join in on something big!</button>
-                <h3 className="text-3xl font-medium">Grow your programming skills through <span className="text-highlight">visualization</span></h3>
-                <p className="text-stone-700">Learn programming, data structures & algorithms, and prepare for the interview - all in one place.</p>
+                <h3 className="text-3xl font-medium">The best way to learn, through <span className="text-highlight">bite-sized Learning</span></h3>
+                <p className="text-stone-700">Gain expertise in coding, blockchain, and various other subjects, all conveniently available in one comprehensive learning resource</p>
                 <button className="flex w-1/2 lg:w-2/5 btn-primary">
                     <p className="flex-1">Join for free</p>
                     <BsArrowRight
@@ -143,7 +143,7 @@ const BannerWelcome = React.forwardRef<HTMLDivElement>(function BannerWelcome(pr
             className="bg-purple-800 p-8 text-white relative h-[32.5em] flex flex-col">
             <div className="max-w-sm md:max-w-lg space-y-4 z-10">
                 <p>Beginners welcome</p>
-                <h1 className="text-6xl font-extrabold">Start coding in seconds</h1>
+                <h1 className="text-6xl font-extrabold">Start learning in seconds</h1>
                 <p className="text-lg">Go ahead, give it a try. Our hands on learning environment means you&apos;ll be writing real code from your very first lesson.</p>
                 <div className="flex space-x-8">
                     <button className="bg-white text-violet-900 p-2 rounded truncate">Continue Lesson</button>
@@ -191,19 +191,19 @@ function SectionFaq({ className }: React.HTMLAttributes<HTMLDivElement>) {
     const faqs = [
         {
             title: "What exactly is BeeLearn?",
-            description: "BeeLearn is a visual learning platform to learn programming, data structures & algorithm and prepare for the coding interview. BeeLearn is globally trusted learning platform with 600K+ learners across 70+ countries.",
+            description: "BeeLearn is a bite-size learning platform to learn programming, data structures & algorithm and prepare for the coding interview. BeeLearn also offer exclusive categories such as Blockchain and Web3.",
         },
         {
             title: "Do you provide a free trial?",
-            description: "Yes, BeeLearn offers a 3-day free trial, which includes access to two free courses and 50+ trail videos on all the courses. You can check out our plans.",
+            description: "No, BeeLearn offers a monthly subscription plan and also a free ads version, which includes access to unlimited courses and  practical questions on all the courses.",
         },
         {
             title: "Is there an option to purchase individual courses and packages?",
-            description: "Yes, we offer the flexibility to purchase both individual courses and packages according to your preferences. Click the links to explore the available options.",
+            description: "Yes, we offer the flexibility to select either individual courses and packages according to your preferences. Explore all available options in the app.",
         },
         {
             title: "Do you provide course completion certificate?",
-            description: "Yes, we provide a course completion certificate for all courses.Once you finish the course, the certificate will be generated automatically.",
+            description: "No but we plan to provide a course completion certificate for all courses in near future. Once you finish the course, the certificate will be generated automatically.",
         },
     ];
 
