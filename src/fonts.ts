@@ -5,7 +5,7 @@ export const nunitoSans = Noto_Sans({
     weight: ["100", "300", "400", "600", "800", "700", "900"]
 });
 
-export const defaultFont = Lato({
+export const defaultFont = Nunito({
     subsets: ["latin"],
-    weight: ["100", "300", "400", "700", "900"]
+    weight: ["300", "400", "700", "900"]
 });
