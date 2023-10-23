@@ -51,6 +51,11 @@
 .border-shadow {
     border-color: var(--shadow);
 }
+
 header {
     transition: all 0.5;
+}
+
+.filter-white {
+    filter: invert(88%) sepia(100%) saturate(1%) hue-rotate(201deg) brightness(106%) contrast(101%);
 }

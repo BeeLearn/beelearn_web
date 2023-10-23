@@ -1,7 +1,5 @@
 import { Html, Head, Main, NextScript } from 'next/document';
 
-import LayoutHeader from "@/components/LayoutHeader";
-
 export default function Document() {
     const meta = {
         title: 'Next.js Blog Starter Kit',
@@ -25,7 +23,6 @@ export default function Document() {
                 <meta name="twitter:image" content={meta.image} />
             </Head>
             <body>
-                <LayoutHeader />
                 <Main />
                 <NextScript />
             </body>
