@@ -16,3 +16,5 @@ export * as IcMobile from "./ic_mobile.svg";
 export * as IcSecurity from "./ic_security.svg";
 export * as IcStatistic from "./ic_statistic.svg";
 export * as IcLogo from "./ic_logo.svg";
+export * as IcMascot from "./ic_mascot.svg";
+export * as IcBrand from "./ic_brand.svg";

@@ -19,7 +19,7 @@ const faqs: Faq[] = [
   },
   {
     title: "Do you provide course completion certificate?",
-    answer: "No but we plan to provide a course completion certificate for all courses in near future. Once you finish the course, the certificate will be generated automatically.",
+    answer: "No, but we plan to provide a course completion certificate for all courses in near future. Once you finish the course, the certificate will be generated automatically.",
   },
 ];
 

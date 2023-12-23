@@ -1,4 +1,4 @@
-import { Tajawal, Work_Sans } from "next/font/google";
+import { Tajawal, Work_Sans, Nunito } from "next/font/google";
 
 export const nunitoSans = Work_Sans({
   subsets: ["latin"],

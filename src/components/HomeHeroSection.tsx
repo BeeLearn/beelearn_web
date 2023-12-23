@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 import { IlFeatures } from "@/assets";
 
@@ -18,10 +19,16 @@ export default function HomeHeroSection() {
           resource.
         </p>
         <div className="flex flex-col space-y-4 ">
-          <button className="w-64 btn btn-primary">Get Started</button>
-          <button className="w-64 btn btn-outline-primary">
+          <Link 
+            href="https://auth.usebeelearn.com/sign-up/?source=landing-page"
+            target="_blank"
+            className="w-64 btn btn-primary">Get Started</Link>
+          <Link 
+            href="https://auth.usebeelearn.com/?source=landing-page"
+            target="_blank"
+            className="w-64 btn btn-outline-primary">
             Already have an account?
-          </button>
+          </Link>
         </div>
       </div>
       <div className="flex-1 flex flex-col items-end justify-end">

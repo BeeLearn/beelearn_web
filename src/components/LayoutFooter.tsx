@@ -2,9 +2,9 @@ import { forwardRef } from "react";
 import Image from "next/image";
 
 import { socials } from "@/data";
-import { IcLogo, IlStar } from "@/assets";
-import { nunitoSans } from "@/fonts";
 import { join } from "@/scripts";
+import { nunitoSans } from "@/fonts";
+import { IcMascot, IlStar } from "@/assets";
 
 export default forwardRef<HTMLElement>(function LayoutFooter(props, ref) {
   return (
@@ -16,19 +16,19 @@ export default forwardRef<HTMLElement>(function LayoutFooter(props, ref) {
       <div className="flex flex-col space-y-16 text-white/80 p-8 md:px-32 z-10">
         <div className="flex flex-col space-y-4">
           <div className="flex space-x-4">
-            <button className="bg-stone-900 px-6 py-2 rounded-full">
+            <button className="bg-stone-800 px-6 py-2 rounded-full">
               Privacy
             </button>
-            <button className="bg-stone-900 px-4 py-2 rounded-full">
+            <button className="bg-stone-800 px-4 py-2 rounded-full">
               Terms
             </button>
-            <button className="bg-stone-900 px-4 py-2 rounded-full">
+            <button className="bg-stone-800 px-4 py-2 rounded-full">
               Careers
             </button>
           </div>
           <div className="flex space-x-4">
             {socials.map((social, index) => (
-              <button key={index} className="bg-stone-900 p-1 rounded-full">
+              <button key={index} className="bg-stone-800 p-1 rounded-full">
                 <Image
                   src={social.icon}
                   alt={social.name}
@@ -42,7 +42,7 @@ export default forwardRef<HTMLElement>(function LayoutFooter(props, ref) {
         <div className="flex flex-col space-y-14">
           <div className="flex flex-col">
             <div className="flex space-x-2 items-center">
-              <Image src={IcLogo} alt="Logo" className="w-8 h-8" />
+              <Image src={IcMascot} alt="Logo" className="w-8 h-8" />
               <p
                 className={join(
                   nunitoSans.className,
