@@ -1,27 +1,26 @@
-import { Nunito_Sans } from 'next/font/google';
-import Head from 'next/head';
-import type { AppProps } from 'next/app';
+import "uno.css";
+import "@unocss/reset/tailwind.css";
 
-import '@/index.css';
+import type { AppProps } from "next/app";
+
+import "@/index.css";
 import { defaultFont } from "@/fonts";
-import LayoutFooter from '@/components/LayoutFooter';
-import LayoutHeader from '@/components/LayoutHeader';
-
+import LayoutFooter from "@/components/LayoutFooter";
+import LayoutHeader from "@/components/LayoutHeader";
 
 export default function App({ Component, pageProps }: AppProps) {
-    return (
-        <>
-            <Head>
-                <title></title>
-            </Head>
-
-            <div className={defaultFont.className.concat(" text-[14.5px]")}>
-                <LayoutHeader />
-                <Component {...pageProps} />
-                <LayoutFooter />
-
-            </div>
-
-        </>
-    );
+  return (
+    <>
+      <main
+        className={defaultFont.className.concat(" flex flex-col space-y-16")}
+      >
+        <LayoutHeader />
+        <div
+          className="flex flex-col space-y-16 overflow-scroll">
+          <Component {...pageProps} />
+        </div>
+        <LayoutFooter />
+      </main>
+    </>
+  );
 }

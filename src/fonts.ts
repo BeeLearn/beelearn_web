@@ -1,11 +1,11 @@
-import { Albert_Sans, Nunito, Inter, Lato , Noto_Sans} from "next/font/google";
+import { Tajawal, Work_Sans } from "next/font/google";
 
-export const nunitoSans = Noto_Sans({
-    subsets: ["latin"],
-    weight: ["100", "300", "400", "600", "800", "700", "900"]
+export const nunitoSans = Work_Sans({
+  subsets: ["latin"],
+  weight: ["900"],
 });
 
-export const defaultFont = Nunito({
-    subsets: ["latin"],
-    weight: ["300", "400", "700", "900"]
+export const defaultFont = Tajawal({
+  subsets: ["latin"],
+  weight: ["200", "300", "400", "500", "700", "800", "900"],
 });

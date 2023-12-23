@@ -16,7 +16,7 @@ function isRectInViewport(rect: DOMRect) {
   );
 }
 
-export function listenForScrollAndTriggerCallback(
+export function intersectionTrigger(
   trigger: HTMLElement,
   elements: HTMLElement[],
   intersectionCallback: (
@@ -46,7 +46,7 @@ export function listenForScrollAndTriggerCallback(
       });
     }
   }
-
+  
   window.addEventListener("scroll", () => {
     if (!window.requestAnimationFrame) {
       handleScroll();
