@@ -32,8 +32,8 @@ export default function HomeTestimonialSection() {
                   <p className="text-sm line-clamp-4">{testimonial.content}</p>
                 </div>
                 <div className="flex flex-col">
-                  <p className="text-base">Oguntunde Caleb</p>
-                  <small className="text-white/50 text-sm">@lyonkvalid</small>
+                  <p className="text-base">{testimonial.fullName}</p>
+                  <small className="text-white/50 text-sm">{testimonial.username}</small>
                 </div>
               </div>
             </div>
