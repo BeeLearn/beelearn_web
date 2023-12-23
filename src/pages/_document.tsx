@@ -6,7 +6,7 @@ export default function Document() {
     description:
       "BeeLearn is a bite-sized learning app. Choose from hundreds of topics, brush up your knowledge, up-skill your technical ability.",
     image:
-      "https://res.cloudinary.com/beelearn/image/upload/v1698033110/permanent/main_flyer.jpg",
+      "https://usebeelearn.com/banner.jpg",
   };
 
   return (

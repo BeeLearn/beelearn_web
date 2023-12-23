@@ -15,8 +15,7 @@ export default function App({ Component, pageProps }: AppProps) {
         className={defaultFont.className.concat(" flex flex-col space-y-16")}
       >
         <LayoutHeader />
-        <div
-          className="flex flex-col space-y-16 overflow-scroll">
+        <div className="flex flex-col space-y-16 overflow-scroll">
           <Component {...pageProps} />
         </div>
         <LayoutFooter />
